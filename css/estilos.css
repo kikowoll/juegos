@@ -142,8 +142,7 @@
     margin-bottom: 40px;
 }
 
-.formulario__input,
-.formulario__label {
+.formulario__input {
     display: block;
     width: 100%;
     font-size: 16px;
@@ -163,26 +162,6 @@
 
 .formulario__input:focus {
     outline: 1px solid #0099CC;
-}
-
-.formulario__input:focus + .formulario__label {
-    margin-top: -85px;
-    color: #000;
-}
-
-.formulario__label {
-    position: absolute;
-    padding-left: 15px;
-    margin-top: -55px;
-    color: #666;
-    transition: all .5s;
-    z-index: -20;
-    
-}
-
-.fijar{
-    margin-top: -85px;
-    color: #000;
 }
 
 textarea {
