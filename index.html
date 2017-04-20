@@ -179,7 +179,7 @@
                                 <a href="#">El T-Rex de chrome en construct 2. Juego sencillo</a>
                             </h2>
                                 <p>por <span class="post-autor"><a href="#">kiko vidal</a></span></p>
-                                <p class="post-contenido post-justify"></p>
+                                <p class="post-contenido post-justify">La mayoría de usuarios de GoogleChrome, el navegador desarrollado por Google, sabe de la existencia de un dinosaurio T-Rex que aparece cuando no tenemos conexión a internet; sin embargo, pocos conocen su nombre.<br><br>Este peculiar dinosaurio fue habilitado hace algunos años por los desarrolladores de Google Chrome, quienes pensaron divertir a todas las personas que, por algún motivo, se quedaban sin conexión a internet.<br><br>Seguramente tu lo habrás jugado, ya que este curioso dinosaurio T-Rex no solo está disponible en la versión web de Google Chrome, sino también para su versión móvil, es decir, para smartphones y tablets.<br><br>Jugar con el dinosaurio es sencillo al comienzo, ya que solo debes saltar y esquivar los cactus que aparecen; sin embargo, conforme avance el juego, la dificultad aumentará y será prácticamente imposible de terminar.</p>
                                 <div class="contenedor-botones">
                                 <a href="https://github.com/kikowoll/T-Rex-de-crome" class="btn btn-primary">Leer Mas</a>
                                 <a href="https://youtu.be/8c9jNh_C4wA?list=PLj_WXe7icULFKEbf50C0tWb2Rt27jM0Zt" class="btn btn-success">Ver videos <span class="badge">5</span></a>
@@ -198,21 +198,21 @@
                         <h4 class="modal-title" id="exampleModalLabel">Cuentame</h4>
                       </div>
                       <div class="modal-body">
-                        <form action="enviar.php" method="post">
-                         <div class="form-group">
-                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu nombre*">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" name="correo" class="form-control" id="correo" placeholder="Tu correo*">
-                          </div>
-                           <div class="form-group">
-                            <input type="text" name="asunto" class="form-control" id="asunto" placeholder="Asunto">
-                          </div>
-                          <div class="form-group">
-                            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Mensaje*"></textarea>
-                            <h6 class="text text-info">*Campos obrigatorios</h6>
-                          </div>
-                        </form>
+                       
+                        <form action="enviar.php" class="formulario" method="post">
+                            <input type="text" name="nombre" class="formulario__input" required>
+                            <label for="" class="formulario__label">Nombre*</label>
+                            
+                            <input type="text" name="correo" class="formulario__input" required>
+                            <label for="" class="formulario__label">Correo*</label>
+                            
+                            <input type="text" name="asunto" class="formulario__input">
+                            <label for="" class="formulario__label">Asunto</label>
+                            
+                            <textarea name="mensaje" id="mensaje" class="formulario__input" cols="30" rows="10" placeholder="Mensaje*" required></textarea>
+                            <h5>* campos obrigatorios</h5>
+                        
+                        
                          <div class="panel panel-danger" id="error">
                               <div class="panel-heading">
                                 <h3 class="panel-title">Campos obrigatorios</h3>
@@ -224,8 +224,9 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal" id="salir">Cerrar</button>
-                        <button type="submit" class="btn btn-primary" id="enviar">Enviar mensaje</button>
+                          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                       </div>
+                      </form>
                     </div>
                   </div>
                 </div>

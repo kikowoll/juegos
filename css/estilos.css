@@ -129,6 +129,54 @@
     display: none;
 }
 
+/* formulario  */
+
+.modal-content {
+    z-index: -10;
+}
+
+.formulario__input,
+.formulario__label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+.formulario__input:first-child {
+    margin-top: 10px;
+}
+
+.formulario__input, #mensaje {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    background: rgba(0,200,0,0.1);
+    z-index: 30;
+}
+
+.formulario__input:focus {
+    outline: 1px solid green;
+}
+
+.formulario__input:focus + .formulario__label {
+    margin-top: -85px;
+    color: #000;
+}
+
+.formulario__label {
+    position: absolute;
+    padding-left: 15px;
+    margin-top: -55px;
+    color: rgba(0,0,0,.5);
+    z-index: -3;
+    transition: all .5s;
+    
+}
+
+.fijar{
+    margin-top: -85px;
+    color: #000;
+}
 
 
 

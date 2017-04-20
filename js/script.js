@@ -15,6 +15,7 @@ $(document).on('ready', function(){
             $('#error').css('display','block');
             return false;
         }else{
+            $('.formulario__input').html('');
             $('#error').css('display','block');
             $('#error').attr('class','panel-success');
             $('.panel-title').html('Mensaje enviado');
@@ -25,6 +26,19 @@ $(document).on('ready', function(){
     $('#salir').on('click', function(){
         $('#error').css('display','none');
     });
+    
+    
+    
+    var inputs = document.getElementsByClassName('formulario__input');
+    for(var i=0; i< inputs.length; i++) {
+        inputs[i].addEventListener('keyup', function(){
+            if(this.value.length>= 1) {
+                this.nextElementSibling.classList.add('fijar');
+            }else {
+                this.nextElementSibling.classList.remove('fijar');
+            }
+        });
+    }
     
     
 });
